@@ -2,6 +2,14 @@ import React from 'react';
 import { Stack, Button, Divider } from '@mui/material';
 import { Link } from 'react-router-dom';
 
+const sections = [
+  { to: '/', text: 'Home' },
+  { to: '/class-schedule', text: 'Class Schedule' },
+  { to: '/membership', text: 'Membership' },
+  { to: '/instructors', text: 'Instructors' },
+  { to: '/contact-info', text: 'Contact Info' },
+];
+
 function NavBar() {
   return (
     <>
@@ -12,21 +20,13 @@ function NavBar() {
         justifyContent='center'
         spacing={{ xs: 0.5, sm: 1, md: 2 }}
       >
-        <Button varient='outlined' href='/'>
-          <Link to='/'>Home</Link>
-        </Button>
-        <Button varient='outlined' href='/class-schedule'>
-          <Link to='/class-schedule'>Class Schedule</Link>
-        </Button>
-        <Button varient='outlined' href='/membership'>
-          <Link to='/membership'>Membership</Link>
-        </Button>
-        <Button varient='outlined' href='/instructors'>
-          <Link to='/instructors'>Instructors</Link>
-        </Button>
-        <Button varient='outlined' href='/contact-info'>
-          <Link to='/contact-info'>Contact Info</Link>
-        </Button>
+        {sections.map((section) => {
+          return (
+            <Button varient='outlined' href={section.to}>
+              <Link to={section.to}>{section.text}</Link>
+            </Button>
+          );
+        })}
       </Stack>
     </>
   );
