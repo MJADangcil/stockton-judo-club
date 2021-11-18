@@ -1,6 +1,8 @@
 import React from 'react';
-import { Stack, Button, Divider } from '@mui/material';
-import { Link } from 'react-router-dom';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack'
+import Divider from '@mui/material/Divider'
+import { Button } from '@mui/material';
 
 const sections = [
   { to: '/', text: 'Home' },
@@ -12,7 +14,14 @@ const sections = [
 
 function NavBar() {
   return (
-    <>
+    <Box
+      sx={{
+        bgcolor: 'color.primary',
+        boxShadow: 2,
+        p: 2,
+        minWidth: 300,
+      }}
+    >
       <Stack
         alignItems='center'
         direction={{ xs: 'column', sm: 'row' }}
@@ -23,12 +32,12 @@ function NavBar() {
         {sections.map((section) => {
           return (
             <Button varient='outlined' href={section.to}>
-              <Link to={section.to}>{section.text}</Link>
+              {section.text}
             </Button>
           );
         })}
       </Stack>
-    </>
+    </Box>
   );
 }
 
