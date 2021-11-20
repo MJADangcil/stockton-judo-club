@@ -1,16 +1,11 @@
 import React from 'react';
-import { Container } from '@mui/material';
-
 
 function HomePage() {
   return (
-    <Container>
-      <img
-        src=''
-        alt='Stockton Judo Club logo'
-      />
+    <>
+      <img src='/logo192.png' alt='Stockton Judo Club logo' />
       Stockton Judo Club
-    </Container>
+    </>
   );
 }
 
