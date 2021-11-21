@@ -12,8 +12,7 @@ function Footer() {
   return (
     <footer>
       <AppBar
-        position='fixed'
-        color='secondary'
+        position='fixed' 
         sx={{
           backgroundColor: '#292929',
           top: 'auto',
