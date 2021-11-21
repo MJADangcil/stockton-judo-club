@@ -1,5 +1,5 @@
 import React from 'react';
-import makeStyles from '@mui/styles/makeStyles';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -8,7 +8,8 @@ import Divider from '@mui/material/Divider';
 import Toolbar from '@mui/material/Toolbar';
 import Stack from '@mui/material/Stack';
 import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
+
+import makeStyles from '@mui/styles/makeStyles';
 
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -50,7 +51,7 @@ function NavBar() {
           {/* NavBar on 0-899 width */}
           <Box className={styles.viewportSm}>
             <Grid container alignItems='center' justifyContent='space-between'>
-              <Box
+              <Grid
                 item
                 sx={{
                   backgroundColor: 'white',
@@ -61,10 +62,12 @@ function NavBar() {
                 src='/logo512.png'
                 alt='Stockton Judo Club logo'
               />
-              <Box item component='h4'>
+              <Grid item component='h4'>
                 STOCKTON JUDO CLUB
-              </Box>
-              <MenuIcon item />
+              </Grid>
+              <Grid item>
+                <MenuIcon />
+              </Grid>
             </Grid>
           </Box>
 
@@ -80,13 +83,15 @@ function NavBar() {
               {sections.map((section, i) => {
                 return (
                   <Button
-                    item
+                    item='true'
                     key={i}
                     color='inherit'
                     href={section.to}
                     size='large'
                   >
-                    <Link underline='always' color='inherit'>{section.text}</Link>
+                    <Link underline='always' color='inherit'>
+                      {section.text}
+                    </Link>
                   </Button>
                 );
               })}
