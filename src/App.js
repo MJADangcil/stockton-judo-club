@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import HomePage from './pages/HomePage';
-import ClassSchedule from './pages/ClassSchedule';
-import Membership from './pages/Membership';
-import Instructors from './pages/Instructors';
-import ContactInfo from './pages/ContactInfo';
-import Footer from './components/Footer';
+import NavBar from './components/NavBar/NavBar';
+import HomePage from './pages/HomePage/HomePage';
+import ClassSchedule from './pages/ClassSchedule/ClassSchedule';
+import Membership from './pages/Membership/Membership';
+import Instructors from './pages/Instructors/Instructors';
+import ContactInfo from './pages/ContactInfo/ContactInfo';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
