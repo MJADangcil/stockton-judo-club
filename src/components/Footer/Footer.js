@@ -9,12 +9,12 @@ function Footer() {
     <footer>
       <Container
         component='div'
+        maxWidth={false}
         sx={{
           backgroundColor: 'secondary.main',
           color: 'secondary.text',
           bottom: 0,
           position: 'absolute',
-          paddingTop: '16px',
         }}
       >
         <Grid
