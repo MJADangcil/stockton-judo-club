@@ -27,7 +27,15 @@ function Footer() {
             alignItems: 'center',
           }}
         >
-          <Grid component='span' item sx={{ textAlign: 'center' }}>
+          <Grid
+            component='span'
+            item
+            sx={{
+              textAlign: 'center',
+              fontSize: '14px',
+              paddingTop: { xs: '8px', sm: '0px' },
+            }}
+          >
             {new Date().getFullYear()} Stockton Judo Club. All rights reserved.
           </Grid>
           <Grid component='div' item>
