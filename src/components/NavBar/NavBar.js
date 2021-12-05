@@ -1,16 +1,6 @@
 import React from 'react';
-
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
-import Divider from '@mui/material/Divider';
-import Toolbar from '@mui/material/Toolbar';
-import Stack from '@mui/material/Stack';
-import Link from '@mui/material/Link';
-
-import makeStyles from '@mui/styles/makeStyles';
-
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery, Container, Grid, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const sections = [
@@ -22,10 +12,49 @@ const sections = [
 ];
 
 function NavBar() {
+  // const theme = useTheme();
+  // const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
   return (
-    <nav>
-      NavBar
-    </nav>
+    <Container
+      component='nav'
+      maxWidth={false}
+      sx={{
+        backgroundColor: 'primary.main',
+        color: 'primary.text',
+      }}
+    >
+      <Grid
+        component='div'
+        container
+        columnGap={2}
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <Grid
+          component='img'
+          item
+          src='/logo512.png'
+          alt='Stockton Judo Club logo'
+          sx={{ height: '40px', width: '40px' }}
+        />
+        <Grid component='span' item>
+          Stockton Judo Club
+        </Grid>
+        <Grid component='div' item>
+          <IconButton
+            component='button'
+            title='Navigation bar menu'
+            aria-label='Navigation bar menu'
+            sx={{ color: 'primary.text' }}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Grid>
+      </Grid>
+    </Container>
   );
 }
 
