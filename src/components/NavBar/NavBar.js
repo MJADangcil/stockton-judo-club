@@ -4,11 +4,11 @@ import {
   useMediaQuery,
   Container,
   Grid,
-  List,
   IconButton,
   Button,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import Sidebar from '../Sidebar/Sidebar';
 
 const sections = [
   { to: '/', text: 'Home' },
@@ -18,7 +18,7 @@ const sections = [
   { to: '/contact-info', text: 'Contact Info' },
 ];
 
-function NavBar() {
+export default function NavBar() {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
   if (isMobile) {
@@ -66,7 +66,7 @@ function NavBar() {
               <MenuIcon />
             </IconButton>
           </Grid>
-          {/* render a List component */}
+          <Sidebar />
         </Grid>
       </Container>
     );
@@ -117,4 +117,3 @@ function NavBar() {
   }
 }
 
-export default NavBar;
