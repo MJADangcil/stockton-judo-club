@@ -93,6 +93,7 @@ export default function NavBar() {
         >
           {sections.map((section, i) => (
             <Link
+              key={i}
               to={section.to}
               style={{
                 textDecoration: 'none',
@@ -100,7 +101,6 @@ export default function NavBar() {
               }}
             >
               <Grid
-                key={i}
                 component='span'
                 item
                 sx={{
