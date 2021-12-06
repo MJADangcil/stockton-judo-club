@@ -10,16 +10,18 @@ export const theme = createTheme({
   // },
   palette: {
     primary: {
-      main: '#c62828',
-      light: '#ff5f52',
-      dark: '#8e0000',
-      text: '#ffffff',
+      main: '#b71c1c',
+      light: '#f05545',
+      dark: '#7f0000',
     },
     secondary: {
-      main: '#283593',
-      light: '#5f5fc4',
-      dark: '#001064',
-      text: '#ffffff',
+      main: '#0d47a1',
+      light: '#5472d3',
+      dark: '#002171',
+    },
+    text: {
+      dark: '#ffffff',
+      light: '#000000',
     },
   },
 });

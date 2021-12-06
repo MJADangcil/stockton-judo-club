@@ -1,6 +1,12 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
-import { useMediaQuery, Container, Grid, IconButton } from '@mui/material';
+import {
+  useMediaQuery,
+  Container,
+  Grid,
+  List,
+  IconButton,
+  Button,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const sections = [
@@ -12,50 +18,95 @@ const sections = [
 ];
 
 function NavBar() {
-  // const theme = useTheme();
-  // const matches = useMediaQuery(theme.breakpoints.up('sm'));
+  const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
-  return (
-    <Container
-      component='nav'
-      maxWidth={false}
-      sx={{
-        backgroundColor: 'primary.main',
-        color: 'primary.text',
-      }}
-    >
-      <Grid
-        component='div'
-        container
-        columnGap={2}
+  if (isMobile) {
+    return (
+      <Container
+        component='nav'
+        maxWidth={false}
         sx={{
-          justifyContent: 'center',
-          alignItems: 'center',
+          backgroundColor: 'primary.main',
+          color: 'text.dark',
+          height: '4rem',
         }}
       >
         <Grid
-          component='img'
-          item
-          src='/logo512.png'
-          alt='Stockton Judo Club logo'
-          sx={{ height: '40px', width: '40px' }}
-        />
-        <Grid component='span' item>
-          Stockton Judo Club
+          component='div'
+          container
+          columnGap={2}
+          sx={{
+            height: '100%',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Grid item>
+            <Button onClick={() => {console.log('go home')}} sx={{  padding: '1px' }}>
+              <img
+                src='/logo512.png'
+                alt='Stockton Judo Club logo'
+                style={{ height: '50px', width: '50px' }}
+              ></img>
+            </Button>
+          </Grid>
+          <Grid component='span' item>
+            Stockton Judo Club
+          </Grid>
+          <Grid component='div' item>
+            <IconButton
+              component='button'
+              title='Navigation bar menu'
+              aria-label='Navigation bar menu'
+              sx={{ color: 'text.dark' }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Grid>
+          {/* render a List component */}
         </Grid>
-        <Grid component='div' item>
-          <IconButton
-            component='button'
-            title='Navigation bar menu'
-            aria-label='Navigation bar menu'
-            sx={{ color: 'primary.text' }}
-          >
-            <MenuIcon />
-          </IconButton>
+      </Container>
+    );
+  } else {
+    return (
+      <Container
+        component='nav'
+        maxWidth={false}
+        sx={{
+          backgroundColor: 'primary.main',
+          color: 'text.dark',
+          height: '4rem',
+        }}
+      >
+        <Grid
+          component='div'
+          container
+          columnGap={3}
+          sx={{
+            height: '100%',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          {sections.map((section, i) => (
+            <Grid
+              key={i}
+              component='a'
+              item
+              href={section.to}
+              sx={{
+                textDecoration: 'none',
+                color: 'text.dark',
+                fontSize: '20px',
+              }}
+            >
+              {section.text}
+            </Grid>
+          ))}
         </Grid>
-      </Grid>
-    </Container>
-  );
+      </Container>
+    );
+  }
 }
 
 export default NavBar;

@@ -10,7 +10,7 @@ function Footer() {
       maxWidth={false}
       sx={{
         backgroundColor: 'secondary.main',
-        color: 'secondary.text',
+        color: 'text.dark',
         bottom: 0,
         position: 'absolute',
       }}
@@ -40,7 +40,7 @@ function Footer() {
           <IconButton
             component='button'
             aria-label='Stockton Judo contact email'
-            sx={{ color: 'secondary.text' }}
+            sx={{ color: 'text.dark' }}
           >
             <EmailIcon />
           </IconButton>
@@ -48,7 +48,7 @@ function Footer() {
             component='button'
             title='Stockton Judo Facebook page'
             aria-label='Stockton Judo Facebook page'
-            sx={{ color: 'secondary.text' }}
+            sx={{ color: 'text.dark' }}
           >
             <FacebookIcon />
           </IconButton>
