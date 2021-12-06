@@ -8,7 +8,7 @@ import Instructors from './pages/Instructors/Instructors';
 import ContactInfo from './pages/ContactInfo/ContactInfo';
 import Footer from './components/Footer/Footer';
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <NavBar />
@@ -25,5 +25,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;
