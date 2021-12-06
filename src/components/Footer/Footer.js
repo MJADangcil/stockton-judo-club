@@ -39,6 +39,7 @@ export default function Footer() {
         <Grid component='div' item>
           <IconButton
             component='button'
+            href='mailto:stocktonjudo@yahoo.com'
             aria-label='Stockton Judo contact email'
             sx={{ color: 'text.dark' }}
           >
@@ -46,6 +47,8 @@ export default function Footer() {
           </IconButton>
           <IconButton
             component='button'
+            href='https://www.facebook.com/StocktonJudoClub/'
+            target='_blank'
             title='Stockton Judo Facebook page'
             aria-label='Stockton Judo Facebook page'
             sx={{ color: 'text.dark' }}
