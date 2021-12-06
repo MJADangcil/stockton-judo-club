@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   useMediaQuery,
   Container,
@@ -42,13 +43,15 @@ function NavBar() {
           }}
         >
           <Grid item>
-            <Button onClick={() => {console.log('go home')}} sx={{  padding: '1px' }}>
-              <img
-                src='/logo512.png'
-                alt='Stockton Judo Club logo'
-                style={{ height: '50px', width: '50px' }}
-              ></img>
-            </Button>
+            <Link to='/'>
+              <Button sx={{ padding: '1px' }}>
+                <img
+                  src='/logo512.png'
+                  alt='Stockton Judo Club logo'
+                  style={{ height: '50px', width: '50px' }}
+                ></img>
+              </Button>
+            </Link>
           </Grid>
           <Grid component='span' item>
             Stockton Judo Club
@@ -89,19 +92,24 @@ function NavBar() {
           }}
         >
           {sections.map((section, i) => (
-            <Grid
-              key={i}
-              component='a'
-              item
-              href={section.to}
-              sx={{
+            <Link
+              to={section.to}
+              style={{
                 textDecoration: 'none',
-                color: 'text.dark',
                 fontSize: '20px',
               }}
             >
-              {section.text}
-            </Grid>
+              <Grid
+                key={i}
+                component='span'
+                item
+                sx={{
+                  color: 'text.dark',
+                }}
+              >
+                {section.text}
+              </Grid>
+            </Link>
           ))}
         </Grid>
       </Container>
