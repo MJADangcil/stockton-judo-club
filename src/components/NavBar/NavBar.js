@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   useMediaQuery,
   Container,
   Grid,
   IconButton,
+  Drawer,
+  Box,
+  List,
+  ListItemButton,
+  ListItemText,
   Button,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import Sidebar from '../Sidebar/Sidebar';
 
 const sections = [
   { to: '/', text: 'Home' },
@@ -19,7 +23,12 @@ const sections = [
 ];
 
 export default function NavBar() {
+  const [sidebar, setSidebar] = useState(false);
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down('sm'));
+
+  const handleSidebar = () => {
+    setSidebar(!sidebar);
+  };
 
   if (isMobile) {
     return (
@@ -62,12 +71,36 @@ export default function NavBar() {
               title='Navigation bar menu'
               aria-label='Navigation bar menu'
               sx={{ color: 'text.dark' }}
+              onClick={handleSidebar}
             >
               <MenuIcon />
             </IconButton>
           </Grid>
-          <Sidebar />
         </Grid>
+        <aside>
+          <Drawer anchor='right' open={sidebar} onClose={handleSidebar}>
+            <Box
+              onClick={handleSidebar}
+              sx={{
+                backgroundColor: 'primary.main',
+                color: 'text.dark',
+                height: '100%',
+              }}
+            >
+              <List>
+                {sections.map((section, i) => (
+                  <ListItemButton
+                    component={Link}
+                    to={section.to}
+                    key={section.text}
+                  >
+                    <ListItemText primary={section.text} />
+                  </ListItemButton>
+                ))}
+              </List>
+            </Box>
+          </Drawer>
+        </aside>
       </Container>
     );
   } else {
@@ -116,4 +149,3 @@ export default function NavBar() {
     );
   }
 }
-
