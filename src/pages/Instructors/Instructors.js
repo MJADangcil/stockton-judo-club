@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Instructors() {
+export default function Instructors() {
   return <h1>Instructors</h1>;
 }
-
-export default Instructors;

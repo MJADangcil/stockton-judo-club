@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Membership() {
+export default function Membership() {
   return <h1>Membership</h1>;
 }
-
-export default Membership;

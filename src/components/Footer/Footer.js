@@ -3,7 +3,7 @@ import { Container, Grid, IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-function Footer() {
+export default function Footer() {
   return (
     <Container
       component='footer'
@@ -57,5 +57,3 @@ function Footer() {
     </Container>
   );
 }
-
-export default Footer;

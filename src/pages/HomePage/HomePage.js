@@ -1,6 +1,6 @@
 import React from 'react';
 
-function HomePage() {
+export default function HomePage() {
   return (
     <>
       <img src='/logo192.png' alt='Stockton Judo Club logo' />
@@ -8,5 +8,3 @@ function HomePage() {
     </>
   );
 }
-
-export default HomePage;
