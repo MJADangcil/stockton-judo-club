@@ -124,6 +124,17 @@ export default function NavBar() {
             alignItems: 'center',
           }}
         >
+          <Grid item>
+            <Link to='/'>
+              <Button sx={{ padding: '1px' }}>
+                <img
+                  src='/logo512.png'
+                  alt='Stockton Judo Club logo'
+                  style={{ height: '50px', width: '50px' }}
+                ></img>
+              </Button>
+            </Link>
+          </Grid>
           {sections.map((section, i) => (
             <Link
               key={i}
