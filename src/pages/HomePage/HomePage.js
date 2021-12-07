@@ -4,8 +4,8 @@ import { Container, Grid } from '@mui/material';
 export default function HomePage() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto'}}>
-        <Grid container>
+      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+        <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
           <Grid component='h3' item>
             About Judo
           </Grid>
@@ -21,8 +21,8 @@ export default function HomePage() {
             Canadian Prime Minister Pierre Trudeau, Prince Albert of Monaco, and
             Russian President Vladimir Putin to name a few. Tickets to judo
             events at the Summer Olympics are usually the first to sell out.
-            <br />
-            <br />
+          </Grid>
+          <Grid component='span' item>
             The objective in competitive judo is to defeat your opponents by
             throwing them to the ground decisively, immobilizing them on the
             ground, or forcing them to submit by way of strangulation or joint
@@ -39,20 +39,20 @@ export default function HomePage() {
             belt) by the United States Judo Federation (USJF). Stockton Judo
             Club has operated continuously since then and is the oldest judo
             club in California’s Central Valley.
-            <br />
-            <br />
+          </Grid>
+          <Grid component='span' item>
             Stockton Judo Club is led by Sensei Steve Ikeda. Other on-the-mat
             instructors are Dean Komure, Gregg Skarmas, Raul Ochoa, Michael
             Leary, and Chris Eley.
-            <br />
-            <br />
+          </Grid>
+          <Grid component='span' item>
             Over the years, Stockton Judo Club has produced numerous local,
             state, and national champions. It is the home dojo of two-time
             Olympian Tommy Martin, who represented the United States at the 1976
             Montreal Olympic Games and was also on the 1980 Olympic team that
             was to have competed in Moscow.
-            <br />
-            <br />
+          </Grid>
+          <Grid component='span' item>
             Stockton Judo Club is located in the McKinley Neighborhood Center at
             the corner of Ninth and California Streets in McKinley Park (424 E.
             Ninth Street). General workouts are Mondays and Thursdays from 6:30
