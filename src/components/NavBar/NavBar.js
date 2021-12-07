@@ -36,9 +36,10 @@ export default function NavBar() {
         component='nav'
         maxWidth={false}
         sx={{
+          display: 'table-row',
           backgroundColor: 'primary.main',
           color: 'text.dark',
-          height: '4rem',
+          height: '1px',
         }}
       >
         <Grid
@@ -109,9 +110,10 @@ export default function NavBar() {
         component='nav'
         maxWidth={false}
         sx={{
+          display: 'table-row',
           backgroundColor: 'primary.main',
           color: 'text.dark',
-          height: '4rem',
+          height: '1px',
         }}
       >
         <Grid

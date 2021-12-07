@@ -9,10 +9,10 @@ export default function Footer() {
       component='footer'
       maxWidth={false}
       sx={{
+        display: 'table-row',
         backgroundColor: 'secondary.main',
         color: 'text.dark',
-        bottom: 0,
-        position: 'absolute',
+        height: '1px',
       }}
     >
       <Grid
