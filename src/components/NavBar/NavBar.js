@@ -16,10 +16,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 const sections = [
   { to: '/', text: 'Home' },
-  { to: '/class-schedule', text: 'Class Schedule' },
   { to: '/membership', text: 'Membership' },
   { to: '/instructors', text: 'Instructors' },
   { to: '/contact-info', text: 'Contact Info' },
+  // { to: '/class-schedule', text: 'Class Schedule' },
 ];
 
 export default function NavBar() {
