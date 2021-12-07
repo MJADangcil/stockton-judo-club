@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Container } from '@mui/material';
 import NavBar from './components/NavBar/NavBar';
 import HomePage from './pages/HomePage/HomePage';
 import ClassSchedule from './pages/ClassSchedule/ClassSchedule';
@@ -11,8 +12,12 @@ import Footer from './components/Footer/Footer';
 export default function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <section>
+      <Container
+        maxWidth={false}
+        disableGutters={true}
+        sx={{ display: 'table', position: 'relative', minHeight: '100vh' }}
+      >
+        <NavBar />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/class-schedule' element={<ClassSchedule />} />
@@ -20,8 +25,8 @@ export default function App() {
           <Route path='/instructors' element={<Instructors />} />
           <Route path='/contact-info' element={<ContactInfo />} />
         </Routes>
-      </section>
-      <Footer />
+        <Footer />
+      </Container>
     </BrowserRouter>
   );
 }
