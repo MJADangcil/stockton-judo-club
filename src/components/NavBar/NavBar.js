@@ -50,6 +50,7 @@ export default function NavBar() {
             height: '100%',
             justifyContent: 'center',
             alignItems: 'center',
+            padding: '6px 16px',
           }}
         >
           <Grid item>
@@ -124,6 +125,7 @@ export default function NavBar() {
             height: '100%',
             justifyContent: 'center',
             alignItems: 'center',
+            padding: '6px 16px',
           }}
         >
           <Grid item>
