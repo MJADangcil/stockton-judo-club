@@ -6,7 +6,7 @@ export default function HomePage() {
     <section>
       <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
         <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant='h4'>About Judo</Typography>
             <Divider />
           </Grid>
@@ -37,7 +37,7 @@ export default function HomePage() {
               them.
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid item xs={12}>
             <Typography variant='h4'>About Stockton Judo Club</Typography>
             <Divider />
           </Grid>
