@@ -4,7 +4,7 @@ import { Container, Divider, Grid, Link, Typography } from '@mui/material';
 export default function ContactInfo() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
           rowGap={3}

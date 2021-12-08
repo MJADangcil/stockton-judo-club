@@ -23,7 +23,7 @@ const links = [
 export default function UsefulLinks() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
           rowSpacing={2.5}

@@ -4,7 +4,7 @@ import React from 'react';
 export default function HomePage() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
           <Grid item xs={12}>
             <Divider>

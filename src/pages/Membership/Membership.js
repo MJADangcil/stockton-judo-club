@@ -30,10 +30,10 @@ const membershipCosts = [
 export default function Membership() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
-          rowSpacing={2.5}
+          œ={2.5}
           columnGap={3}
           sx={{
             padding: '16px',

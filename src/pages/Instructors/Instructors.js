@@ -72,7 +72,7 @@ const instructors = [
 export default function Instructors() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
           rowGap={3}
