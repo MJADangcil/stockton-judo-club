@@ -53,7 +53,7 @@ export default function Membership() {
             <Grid
               key={i}
               component={Card}
-              raised={true}
+              elevation={6}
               sx={{
                 margin: '16px',
                 width: '200px',

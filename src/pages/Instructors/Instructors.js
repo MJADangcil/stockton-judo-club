@@ -91,7 +91,7 @@ export default function Instructors() {
             </Divider>
           </Grid>
           {instructors.map((instructor, i) => (
-            <Grid key={i} component={Card} raised={true} item sm={5} md={3}>
+            <Grid key={i} component={Card} elevation={6} item sm={5} md={3}>
               <CardHeader
                 title={instructor.name}
                 subheader={instructor.title}

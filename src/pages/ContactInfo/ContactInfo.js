@@ -65,7 +65,7 @@ export default function ContactInfo() {
           </Grid>
           <Grid item xs={12} sm={5} lg={3}>
             <Typography variant='h5'>Schedule</Typography>
-            <TableContainer component={Paper} raised={true}>
+            <TableContainer component={Paper} elevation={6}>
               <Table>
                 <TableBody>
                   {schedule.map((s, i) => (
