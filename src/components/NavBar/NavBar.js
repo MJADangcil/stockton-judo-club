@@ -19,6 +19,7 @@ const sections = [
   { to: '/membership', text: 'Membership' },
   { to: '/instructors', text: 'Instructors' },
   { to: '/contact-info', text: 'Contact Info' },
+  { to: '/useful-links', text: 'Useful Links' },
 ];
 
 export default function NavBar() {
