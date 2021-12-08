@@ -75,6 +75,7 @@ export default function Instructors() {
       <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
         <Grid
           container
+          rowGap={3}
           columnGap={3}
           sx={{
             padding: '16px',
@@ -83,22 +84,14 @@ export default function Instructors() {
           }}
         >
           <Grid item xs={12}>
-            <Typography variant='h4'>Instructors</Typography>
-            <Divider />
+            <Divider>
+              <Typography variant='h4'>
+                Instructors
+              </Typography>
+            </Divider>
           </Grid>
           {instructors.map((instructor, i) => (
-            <Grid
-              key={i}
-              component={Card}
-              raised={true}
-              item
-              sm={5}
-              md={3}
-              sx={{
-                margin: '16px',
-                width: '300px',
-              }}
-            >
+            <Grid key={i} component={Card} raised={true} item sm={5} md={3}>
               <CardHeader
                 title={instructor.name}
                 subheader={instructor.title}
