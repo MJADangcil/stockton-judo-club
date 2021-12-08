@@ -33,7 +33,7 @@ export default function Membership() {
       <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
-          œ={2.5}
+          rowGap={2.5}
           columnGap={3}
           sx={{
             padding: '16px',
@@ -51,6 +51,7 @@ export default function Membership() {
           </Grid>
           {membershipCosts.map((membership, i) => (
             <Grid
+              item
               key={i}
               component={Card}
               elevation={6}
