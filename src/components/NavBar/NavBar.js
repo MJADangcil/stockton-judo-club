@@ -19,7 +19,6 @@ const sections = [
   { to: '/membership', text: 'Membership' },
   { to: '/instructors', text: 'Instructors' },
   { to: '/contact-info', text: 'Contact Info' },
-  // { to: '/class-schedule', text: 'Class Schedule' },
 ];
 
 export default function NavBar() {

@@ -53,7 +53,6 @@ export default function Membership() {
               key={i}
               component={Card}
               raised={true}
-              // item
               sx={{
                 margin: '16px',
                 width: '200px',
