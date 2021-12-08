@@ -5,17 +5,30 @@ export default function ContactInfo() {
   return (
     <section>
       <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
-        <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
+        <Grid
+          container
+          rowGap={3}
+          columnGap={3}
+          sx={{
+            padding: '16px',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Grid item xs={12}>
-            <Typography variant='h4'>Contact Info</Typography>
-            <Divider />
+            <Divider>
+              <Typography variant='h4'>Contact Info</Typography>
+            </Divider>
           </Grid>
-          <Grid item>
-            <Typography variant='h6'>
-              Schedule: Monday, Tuesday, and Thursday, 6:30pm to 8:00pm PST
+          <Grid item xs={12} sm={5}>
+            <Typography variant='h5'>Schedule</Typography>
+            <Typography varient='body1'>
+              Monday, Tuesday, and Thursday, 6:30pm-8:00pm PST
             </Typography>
-            <Typography variant='h6'>
-              Email:{' '}
+          </Grid>
+          <Grid item xs={12} sm={5}>
+            <Typography variant='h5'>Email</Typography>
+            <Typography variant='body1'>
               <Link href='mailto:stocktonjudo@yahoo.com'>
                 stocktonjudo@yahoo.com
               </Link>
