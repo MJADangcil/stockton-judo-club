@@ -1,5 +1,45 @@
 import React from 'react';
+import { Container, Divider, Grid, Link, Typography } from '@mui/material';
+
+const links = [
+  {
+    name: 'International Judo Federation',
+    href: 'https://ijf.org',
+  },
+  {
+    name: 'United States Judo Federation',
+    href: 'https://usjf.com',
+  },
+  {
+    name: 'Daiheigen Yudanshakai',
+    href: 'https://daiheigen.org',
+  },
+  {
+    name: 'Kodokan Judo Institute',
+    href: 'http://kodokanjudoinstitute.org/en/',
+  },
+];
 
 export default function UsefulLinks() {
-  return <h1>UsefulLinks</h1>;
+  return (
+    <section>
+      <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
+        <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
+          <Grid item xs={12}>
+            <Typography variant='h4'>Useful Links</Typography>
+            <Divider />
+          </Grid>
+          {links.map((link, i) => (
+            <Grid key={i} item xs={6}>
+              <Typography variant='h6'>
+                <Link href={link.href} target='_blank'>
+                  {link.name}
+                </Link>
+              </Typography>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </section>
+  );
 }
