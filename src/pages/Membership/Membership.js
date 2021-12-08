@@ -33,11 +33,11 @@ export default function Membership() {
       <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
-          rowGap={2.5}
+          rowGap={3}
           columnGap={3}
           sx={{
             padding: '16px',
-            justifyContent: 'center',
+            justifyContent: 'space-evenly',
             alignItems: 'flex-start',
           }}
         >

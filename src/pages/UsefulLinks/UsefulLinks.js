@@ -26,16 +26,21 @@ export default function UsefulLinks() {
       <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
         <Grid
           container
-          rowSpacing={2.5}
-          columnSpacing={4}
-          sx={{ padding: '16px' }}
+          rowGap={3}
+          columnGap={3}
+          sx={{
+            padding: '16px',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+          }}
         >
           <Grid item xs={12} sx={{ width: '100%' }}>
-            <Typography variant='h4'>Useful Links</Typography>
-            <Divider />
+            <Divider>
+              <Typography variant='h4'>Useful Links</Typography>
+            </Divider>
           </Grid>
           {links.map((link, i) => (
-            <Grid key={i} item xs={12} sm={6} md={4} lg={3}>
+            <Grid key={i} item xs={12}>
               <Typography variant='h6'>
                 <Link href={link.href} target='_blank'>
                   {link.name}

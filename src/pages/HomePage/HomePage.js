@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <section>
       <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
-        <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
+        <Grid container rowGap={3} sx={{ padding: '16px' }}>
           <Grid item xs={12}>
             <Divider>
               <Typography variant='h4'>
