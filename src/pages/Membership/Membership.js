@@ -42,8 +42,9 @@ export default function Membership() {
           }}
         >
           <Grid item xs={12}>
-            <Typography variant='h4'>Membership</Typography>
-            <Divider />
+            <Divider>
+              <Typography variant='h4'>Membership</Typography>
+            </Divider>
             <Typography variant='overline'>
               (rates current as of January 1, 2022)
             </Typography>
