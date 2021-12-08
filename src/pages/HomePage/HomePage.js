@@ -1,5 +1,5 @@
-import React from 'react';
 import { Container, Divider, Grid, Link, Typography } from '@mui/material';
+import React from 'react';
 
 export default function HomePage() {
   return (
@@ -7,8 +7,16 @@ export default function HomePage() {
       <Container maxWidth={false} sx={{ display: 'table-row', height: 'auto' }}>
         <Grid container rowSpacing={2.5} sx={{ padding: '16px' }}>
           <Grid item xs={12}>
-            <Typography variant='h4'>About Judo</Typography>
-            <Divider />
+            <Divider>
+              <Typography variant='h4'>
+                Home
+              </Typography>
+            </Divider>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant='h5'>
+              About Judo
+            </Typography>
           </Grid>
           <Grid item>
             <Typography variant='body1'>
@@ -38,8 +46,9 @@ export default function HomePage() {
             </Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography variant='h4'>About Stockton Judo Club</Typography>
-            <Divider />
+            <Typography variant='h5'>
+              About Stockton Judo
+            </Typography>
           </Grid>
           <Grid item>
             <Typography variant='body1'>
