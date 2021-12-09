@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import CustomLink from '../CustomLink/CustomLink';
 import {
   useMediaQuery,
   Container,
@@ -91,12 +92,10 @@ export default function NavBar() {
             >
               <List>
                 {sections.map((section, i) => (
-                  <ListItemButton
-                    component={Link}
-                    to={section.to}
-                    key={section.text}
-                  >
-                    <ListItemText primary={section.text} />
+                  <ListItemButton key={section.text}>
+                    <CustomLink to={section.to}>
+                      <ListItemText primary={section.text} />
+                    </CustomLink>
                   </ListItemButton>
                 ))}
               </List>
@@ -140,14 +139,7 @@ export default function NavBar() {
             </Link>
           </Grid>
           {sections.map((section, i) => (
-            <Link
-              key={i}
-              to={section.to}
-              style={{
-                textDecoration: 'none',
-                fontSize: '20px',
-              }}
-            >
+            <CustomLink key={i} to={section.to} fontSize={'20px'}>
               <Grid
                 component='span'
                 item
@@ -157,7 +149,7 @@ export default function NavBar() {
               >
                 {section.text}
               </Grid>
-            </Link>
+            </CustomLink>
           ))}
         </Grid>
       </Container>
