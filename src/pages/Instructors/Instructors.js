@@ -85,13 +85,19 @@ export default function Instructors() {
         >
           <Grid item xs={12}>
             <Divider>
-              <Typography variant='h4'>
-                Instructors
-              </Typography>
+              <Typography variant='h4'>Instructors</Typography>
             </Divider>
           </Grid>
           {instructors.map((instructor, i) => (
-            <Grid key={i} component={Card} elevation={6} item sm={5} md={3}>
+            <Grid
+              key={i}
+              component={Card}
+              elevation={6}
+              item
+              sm={5}
+              md={3}
+              lg={2}
+            >
               <CardHeader
                 title={instructor.name}
                 subheader={instructor.title}
