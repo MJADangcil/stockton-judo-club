@@ -14,6 +14,7 @@ import {
   Button,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from '../../assets/logo512.png';
 
 const sections = [
   { to: '/', text: 'Home' },
@@ -58,7 +59,7 @@ export default function NavBar() {
             <Link to='/'>
               <Button sx={{ padding: '1px' }}>
                 <img
-                  src='/logo512.png'
+                  src={logo}
                   alt='Stockton Judo Club logo'
                   style={{ height: '50px', width: '50px' }}
                 ></img>
@@ -131,7 +132,7 @@ export default function NavBar() {
             <Link to='/'>
               <Button sx={{ padding: '1px' }}>
                 <img
-                  src='/logo512.png'
+                  src={logo}
                   alt='Stockton Judo Club logo'
                   style={{ height: '50px', width: '50px' }}
                 ></img>
