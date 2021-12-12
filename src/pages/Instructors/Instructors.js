@@ -96,7 +96,8 @@ export default function Instructors() {
               item
               sm={5}
               md={3}
-              lg={2}
+              lg={2.5}
+              xl={2}
             >
               <CardHeader
                 title={instructor.name}
