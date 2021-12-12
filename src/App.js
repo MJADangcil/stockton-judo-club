@@ -19,6 +19,7 @@ export default function App() {
       >
         <NavBar />
         <Routes>
+          <Route path='/stockton-judo-club' element={<HomePage />} />
           <Route path='/' element={<HomePage />} />
           <Route path='/membership' element={<Membership />} />
           <Route path='/instructors' element={<Instructors />} />
