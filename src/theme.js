@@ -1,25 +1,27 @@
 import createTheme from '@mui/material/styles/createTheme';
 
 export const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-    },
-  },
+  // breakpoints: {
+  //   xs: '0px',
+  //   sm: '600px',
+  //   md: '900px',
+  //   lg: '1200px',
+  //   xl: '1536px',
+  // },
   palette: {
     primary: {
-      main: '#ed1c24',
-      light: '#ff5f4e',
-      dark: '#b20000',
+      main: '#b71c1c',
+      light: '#f05545',
+      dark: '#7f0000',
     },
     secondary: {
-      main: '#2e3192',
-      light: '#635bc3',
-      dark: '#000c63',
+      main: '#0d47a1',
+      light: '#5472d3',
+      dark: '#002171',
+    },
+    text: {
+      dark: '#ffffff',
+      light: '#000000',
     },
   },
 });
