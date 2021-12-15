@@ -9,13 +9,13 @@ import {
   Typography,
   Divider,
 } from '@mui/material';
-import steveIkedaImage from '../../assets/Steve Ikeda.png';
-import deanKomureImage from '../../assets/Dean Komure.png';
-import greggSkarmasImage from '../../assets/Gregg Skarmas.png';
-import raulOchoaImage from '../../assets/Raul Ochoa.png';
-import mikeLearyImage from '../../assets/Mike Leary.png';
-import chrisEleyImage from '../../assets/Chris Eley.png';
-import mikeSchubertImage from '../../assets/Mike Schubert.png';
+import steveIkedaImage from '../../assets/steve_ikeda.png';
+import deanKomureImage from '../../assets/dean_komure.png';
+import greggSkarmasImage from '../../assets/gregg_skarmas.png';
+import raulOchoaImage from '../../assets/raul_ochoa.png';
+import mikeLearyImage from '../../assets/mike_leary.png';
+import chrisEleyImage from '../../assets/chris_eley.png';
+import mikeSchubertImage from '../../assets/mike_schubert.png';
 
 const instructors = [
   {
