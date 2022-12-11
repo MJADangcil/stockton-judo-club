@@ -46,7 +46,7 @@ export default function Membership() {
               <Typography variant='h4'>Membership</Typography>
             </Divider>
             <Typography variant='overline'>
-              (rates current as of January 1, 2022)
+              (rates current as of November 1, 2022)
             </Typography>
           </Grid>
           {membershipCosts.map((membership, i) => (
