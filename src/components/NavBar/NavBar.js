@@ -18,6 +18,7 @@ import logo from '../../assets/logo512.png';
 
 const sections = [
   { to: '/', text: 'Home' },
+  { to: '/about', text: 'About' },
   { to: '/membership', text: 'Membership' },
   { to: '/instructors', text: 'Instructors' },
   { to: '/contact-info', text: 'Contact Info' },

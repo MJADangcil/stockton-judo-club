@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Container } from '@mui/material';
 import NavBar from './components/NavBar/NavBar';
 import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
 import Membership from './pages/Membership/Membership';
 import Instructors from './pages/Instructors/Instructors';
 import ContactInfo from './pages/ContactInfo/ContactInfo';
@@ -20,6 +21,7 @@ export default function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
           <Route path='/membership' element={<Membership />} />
           <Route path='/instructors' element={<Instructors />} />
           <Route path='/contact-info' element={<ContactInfo />} />
