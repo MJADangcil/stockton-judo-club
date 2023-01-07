@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -8,14 +8,14 @@ import {
   Grid,
   Typography,
   Divider,
-} from '@mui/material';
-import steveIkedaImage from '../../assets/steve_ikeda.png';
-import deanKomureImage from '../../assets/dean_komure.png';
-import greggSkarmasImage from '../../assets/gregg_skarmas.png';
-import raulOchoaImage from '../../assets/raul_ochoa.png';
-import mikeLearyImage from '../../assets/mike_leary.png';
-import chrisEleyImage from '../../assets/chris_eley.png';
-import mikeSchubertImage from '../../assets/mike_schubert.png';
+} from "@mui/material";
+import steveIkedaImage from "../../assets/steve_ikeda.png";
+import deanKomureImage from "../../assets/dean_komure.png";
+import greggSkarmasImage from "../../assets/gregg_skarmas.png";
+import raulOchoaImage from "../../assets/raul_ochoa.png";
+import mikeLearyImage from "../../assets/mike_leary.png";
+import chrisEleyImage from "../../assets/chris_eley.png";
+import mikeSchubertImage from "../../assets/mike_schubert.png";
 
 const instructors = [
   {
@@ -72,20 +72,20 @@ const instructors = [
 export default function Instructors() {
   return (
     <section>
-      <Container maxWidth={false} sx={{ display: 'block', height: 'auto' }}>
+      <Container maxWidth={false} sx={{ display: "block", height: "auto" }}>
         <Grid
           container
           rowGap={3}
           columnGap={3}
           sx={{
-            padding: '16px',
-            justifyContent: 'center',
-            alignItems: 'flex-start',
+            padding: "16px",
+            justifyContent: "center",
+            alignItems: "flex-start",
           }}
         >
           <Grid item xs={12}>
             <Divider>
-              <Typography variant='h4'>Instructors</Typography>
+              <Typography variant="h4">Instructors</Typography>
             </Divider>
           </Grid>
           {instructors.map((instructor, i) => (
@@ -104,13 +104,13 @@ export default function Instructors() {
                 subheader={instructor.title}
               />
               <CardMedia
-                component='img'
+                component="img"
                 image={instructor.headshot}
                 alt={instructor.headshotAlt}
-                sx={{ width: '100%', height: 'auto' }}
+                sx={{ width: "100%", height: "auto" }}
               />
               <CardContent>
-                <Typography variant='body1'>{instructor.content}</Typography>
+                <Typography variant="body1">{instructor.content}</Typography>
               </CardContent>
             </Grid>
           ))}
