@@ -20,7 +20,7 @@ import mikeSchubertImage from "../../assets/mike_schubert.png";
 const instructors = [
   {
     name: "Steve Ikeda",
-    title: "Sensei, 4th Degree Black Belt",
+    title: "Sensei, 5th Degree Black Belt",
     headshot: steveIkedaImage,
     headshotAlt: "Headshot of Steve Ikeda",
     content: `Steve Ikeda started judo at Stockton Judo Club in 1971 and has practiced continuously since then. He has studied and continues to study under many notable judo instructors, including Masao “Duke” Yoshimura, Benso Tsuji, Charles R. “Chuck” Fuertsch, Ted Kawasaki, Haruo Makimoto, Matsuo “Mac” Takeda, Dr. David Matsumoto, and Dr. Kuniko Takeuchi, among others. Steve has been a national level competitor and is only the third sensei in Stockton Judo Club’s history, following Jack Ferrill and founder Duke Yoshimura. He is certified by USA Judo as a self-defense instructor, and in the winter, he can also be found “on the slopes” as a certified ski instructor. Steve is a Life Member of the United States Judo Federation.`,
