@@ -9,7 +9,6 @@ export default function HomePage() {
         maxWidth={false}
         sx={{
           display: "block",
-          position: "absolute",
           textAlign: "center",
           top: "20%",
         }}
@@ -17,7 +16,7 @@ export default function HomePage() {
         <Grid
           container
           direction="column"
-          rowGap={8}
+          rowGap={6}
           sx={{
             padding: "16px",
           }}
@@ -28,22 +27,30 @@ export default function HomePage() {
               alt="Stockton Judo Club logo"
               style={{
                 height: "300px",
+                paddingTop: "20px",
               }}
             />
           </Grid>
           <Grid item>
-            <Typography variant="h6">Welcome to Stockton Judo Club</Typography>
             <Typography variant="h6">
-              Established 1946 Member – Daiheigen Yudanshakai & United States
-              Judo Federation
+              Welcome to Stockton Judo Club
+              <br />
+              Established 1946
+              <br />
+              Member – Daiheigen Yudanshakai & United States Judo Federation
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="h6">
-              When confronted by an attacker, hit your adversary with the
-              biggest thing available:
+            <Typography
+              variant="body1"
+              sx={{ fontStyle: "italic", fontWeight: "600" }}
+            >
+              When confronted by an attacker,
+              <br />
+              hit your adversary with the biggest thing available:
+              <br />
+              THE GROUND
             </Typography>
-            <Typography variant="h6">THE GROUND</Typography>
           </Grid>
         </Grid>
       </Container>
