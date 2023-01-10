@@ -65,7 +65,7 @@ export default function Footer() {
           sx={{
             textAlign: "center",
             fontSize: "12px",
-            paddingTop: { xs: "8px", sm: "0px" },
+            paddingBottom: { xs: "8px", sm: "0px" },
           }}
         >
           <a
