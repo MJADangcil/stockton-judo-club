@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, IconButton, Button } from "@mui/material";
+import { Container, Grid, IconButton } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 
@@ -56,6 +56,26 @@ export default function Footer() {
           >
             <FacebookIcon />
           </IconButton>
+        </Grid>
+        <Grid
+          component="a"
+          item
+          title="Stockton Judo website by Michael Josh A. Dangcil"
+          aria-label="Stockton Judo website by Michael Josh A. Dangcil"
+          sx={{
+            textAlign: "center",
+            fontSize: "12px",
+            paddingTop: { xs: "8px", sm: "0px" },
+          }}
+        >
+          <a
+            href="https://www.linkedin.com/in/michaeljoshdangcil/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "white" }}
+          >
+            Website by Michael Josh A. Dangcil
+          </a>
         </Grid>
       </Grid>
     </Container>
