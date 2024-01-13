@@ -56,7 +56,7 @@ export default function AboutPage() {
           <Grid component="span" item>
             <Typography variant="body1">
               Stockton Judo Club is led by Sensei Steve Ikeda. Other on-the-mat
-              instructors are Dean Komure, Gregg Skarmas, Raul Ochoa, Michael
+              instructors are Dean Komure, Raul Ochoa, Michael
               Leary, and Chris Eley.
             </Typography>
           </Grid>

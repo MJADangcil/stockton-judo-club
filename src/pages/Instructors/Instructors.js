@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import steveIkedaImage from "../../assets/steve_ikeda.png";
 import deanKomureImage from "../../assets/dean_komure.png";
-import greggSkarmasImage from "../../assets/gregg_skarmas.png";
 import raulOchoaImage from "../../assets/raul_ochoa.png";
 import mikeLearyImage from "../../assets/mike_leary.png";
 import chrisEleyImage from "../../assets/chris_eley.png";
@@ -31,13 +30,6 @@ const instructors = [
     headshot: deanKomureImage,
     headshotAlt: "Headshot of Dean Komure",
     content: `Dean Komure started judo at the age of 5 at Stockton Judo Club. While he was growing up, he not only worked out at Stockton Judo Club, but also with Yutaka “Dick” Ito, at Manteca Judo Club for many years. Dean is a second-generation farmer in French Camp, and is also an actor best known for his breakthrough role as “Spectator” in the film, “Day of Independence”. Dean is certified by USA Judo as a self-defense instructor. Dean is also a Life Member of the United States Judo Federation.`,
-  },
-  {
-    name: "Gregg Skarmas",
-    title: "Assistant Instructor, 3rd Degree Black Belt",
-    headshot: greggSkarmasImage,
-    headshotAlt: "Headshot of Gregg Skarmas",
-    content: `Gregg Skarmas began studying and practicing judo in 1989 with Ferd Tihista at Watsonville Judo Club, and joined Stockton Judo Club in 1999. Following a career move to Palm Desert, he started Del Griego Judo Club and operated it for several years before returning to Stockton. Stockton Judo Club is proud to have Gregg back on the mat with us.`,
   },
   {
     name: "Raul Ochoa",
