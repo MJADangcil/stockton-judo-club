@@ -43,7 +43,7 @@ const instructors = [
     title: "Assistant Instructor, 2nd Degree Black Belt",
     headshot: mikeLearyImage,
     headshotAlt: "Headshot of Mike Leary",
-    content: `Mike “Civil War General” Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners. `,
+    content: `Mike Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners.`,
   },
   {
     name: "Chris Eley",
