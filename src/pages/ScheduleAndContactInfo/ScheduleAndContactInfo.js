@@ -19,11 +19,11 @@ const schedule = [
     hours: "Closed",
   },
   {
-    day: "Monday",
+    day: "Monday*",
     hours: "6:30 to 8:00pm",
   },
   {
-    day: "Tuesday",
+    day: "Tuesday†",
     hours: "6:30 to 8:00pm",
   },
   {
@@ -31,7 +31,7 @@ const schedule = [
     hours: "Closed",
   },
   {
-    day: "Thursday",
+    day: "Thursday*",
     hours: "6:30 to 8:00pm",
   },
   {
@@ -44,7 +44,7 @@ const schedule = [
   },
 ];
 
-export default function ContactInfo() {
+export default function ScheduleAndContactInfo() {
   return (
     <section>
       <Container maxWidth={false} sx={{ display: "block", height: "auto" }}>
@@ -60,7 +60,7 @@ export default function ContactInfo() {
         >
           <Grid item xs={12}>
             <Divider>
-              <Typography variant="h4">Contact Info</Typography>
+              <Typography variant="h4">Schedule & Contact Info</Typography>
             </Divider>
           </Grid>
           <Grid item xs={12} sm={5} lg={3}>
@@ -81,6 +81,18 @@ export default function ContactInfo() {
                 </TableBody>
               </Table>
             </TableContainer>
+            <Typography variant="body2">* - General workouts</Typography>
+            <Typography variant="body2">
+              † - Advanced/competitive sessions
+            </Typography>
+            <br />
+            <Typography variant="body1">
+              Special/individual sessions are available on an ad hoc basis.
+              <br />
+              <br />
+              Please contact us for more information regarding our “Beginning
+              Littles Judo” for children ages 5-7!
+            </Typography>
           </Grid>
           <Grid item xs={12} sm={5} lg={2}>
             <Typography variant="h5">Email</Typography>

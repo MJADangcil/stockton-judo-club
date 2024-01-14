@@ -17,12 +17,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../../assets/logo512.png';
 
 const sections = [
-  { to: '/', text: 'Home' },
-  { to: '/about', text: 'About' },
-  { to: '/membership', text: 'Membership' },
-  { to: '/instructors', text: 'Instructors' },
-  { to: '/contact-info', text: 'Contact Info' },
-  { to: '/useful-links', text: 'Useful Links' },
+  { to: "/", text: "Home" },
+  { to: "/about", text: "About" },
+  { to: "/membership", text: "Membership" },
+  { to: "/instructors", text: "Instructors" },
+  { to: "/schedule-and-contact-info", text: "Schedule & Contact Info" },
+  { to: "/useful-links", text: "Useful Links" },
 ];
 
 export default function NavBar() {
