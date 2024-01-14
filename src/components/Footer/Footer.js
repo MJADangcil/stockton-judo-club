@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Grid, IconButton } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Footer() {
   return (
@@ -55,6 +56,16 @@ export default function Footer() {
             sx={{ color: "text.dark" }}
           >
             <FacebookIcon />
+          </IconButton>
+          <IconButton
+            component="button"
+            href="https://www.instagram.com/stocktonjudoclub/"
+            target="_blank"
+            title="Stockton Judo Instagram page"
+            aria-label="Stockton Judo Instagram page"
+            sx={{ color: "text.dark" }}
+          >
+            <InstagramIcon />
           </IconButton>
         </Grid>
         <Grid

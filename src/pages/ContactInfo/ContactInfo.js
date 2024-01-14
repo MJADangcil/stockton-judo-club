@@ -102,6 +102,17 @@ export default function ContactInfo() {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={5} lg={2}>
+            <Typography variant="h5">Instagram</Typography>
+            <Typography variant="body1">
+              <Link
+                href="https://www.instagram.com/stocktonjudoclub/"
+                target="_blank"
+              >
+                @stocktonjudoclub
+              </Link>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={5} lg={2}>
             <Typography variant="h5">Address</Typography>
             <Typography variant="body1">
               <Link
