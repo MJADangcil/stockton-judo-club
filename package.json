@@ -1,7 +1,7 @@
 {
   "name": "stockton-judo-club",
   "version": "0.1.0",
-  "homepage": "https://mjadangcil.github.io/stockton-judo-club",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.0",
