@@ -21,13 +21,13 @@ export default function AboutPage() {
               be an Olympic sport and it is currently the second most popular
               sport in the world, trailing only soccer in total participation.
               Famous judoka include former UFC Champion and Olympic medalist
-              Ronda Rousey, two-time Olympic champion Kayla Harrison, and many
-              world leaders including Senator Ben Nighthorse Campbell (member of
-              the US Olympic team for judo’s inaugural in 1964), President Teddy
-              Roosevelt, Canadian Prime Minister Pierre Trudeau, Prince Albert
-              of Monaco, and Russian President Vladimir Putin to name a few.
-              Tickets to judo events at the Summer Olympics are usually the
-              first to sell out.
+              Ronda Rousey, two-time Olympic champion Kayla Harrison,
+              entertainers Mel C (of the Spice Girls) and Simon LeBon (of Duran
+              Duran), as well as many world leaders including Senator Ben
+              Nighthorse Campbell (member of the US Olympic team in 1964),
+              President Teddy Roosevelt, Canadian Prime Minister Pierre Trudeau,
+              and Prince Albert of Monaco to name a few. Tickets to judo events
+              at the Summer Olympics are usually the first to sell out.
             </Typography>
           </Grid>
           <Grid item>
@@ -36,9 +36,8 @@ export default function AboutPage() {
               throwing them to the ground decisively, immobilizing them on the
               ground, or forcing them to submit by way of strangulation or joint
               locks. Rules govern how throws, pins, strangulations, or joint
-              locks may be applied, so it’s not exactly a free-for-all, and the
-              best practitioners learn to use their opponents’ movement against
-              them.
+              locks may be applied, and the best practitioners learn to use
+              their opponents’ movement against them.
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -46,18 +45,24 @@ export default function AboutPage() {
           </Grid>
           <Grid item>
             <Typography variant="body1">
-              The Stockton Judo Club was founded in 1946 by Sensei Masao “Duke”
-              Yoshimura, who was awarded the rank of Hachidan (8th degree black
-              belt) by the United States Judo Federation (USJF). Stockton Judo
-              Club has operated continuously since then and is the oldest judo
-              club in California’s Central Valley.
+              The Stockton Judo Club was founded in the early 1920s by Carl
+              Kawasaki Sensei. The club was quite active, competing with other
+              clubs throughout the Bay Area and Central Valley in Northern
+              California up to World War II. The club was forced on hiatus
+              during the war, since most of the members and instructors were
+              interned by the United States Government, many not returning until
+              long after the end of the war. In 1946, Sensei Masao “Duke”
+              Yoshimura, who was eventually awarded the rank of Hachidan (8th
+              degree black belt) by the United States Judo Federation (USJF),
+              re-established Stockton Judo Club, which has operated continuously
+              since then and is the oldest judo club in Northern California.
             </Typography>
           </Grid>
           <Grid component="span" item>
             <Typography variant="body1">
               Stockton Judo Club is led by Sensei Steve Ikeda. Other on-the-mat
-              instructors are Dean Komure, Gregg Skarmas, Raul Ochoa, Michael
-              Leary, and Chris Eley.
+              instructors are Dean Komure, Raul Ochoa, Michael Leary, and Chris
+              Eley.
             </Typography>
           </Grid>
           <Grid component="span" item>
@@ -79,12 +84,18 @@ export default function AboutPage() {
                 McKinley Neighborhood Center at the corner of Ninth and
                 California Streets in McKinley Park (424 E. Ninth Street)
               </Link>
-              . General workouts are Mondays and Thursdays from 6:30 to 8:00 pm,
-              advanced/competitive sessions are Tuesdays from 6:30 to 8:00 pm,
-              and special/individual sessions are available on an ad hoc basis.
-              We offer affordable membership rates, and family discounts may
+              . We offer affordable membership rates, and family discounts may
               apply, too. Members of all ages are welcome. Competition is
               encouraged but is not required of members.
+            </Typography>
+          </Grid>
+          <Grid component="span" item>
+            <Typography variant="body1">
+              Stockton Judo Club offers self defense seminars to local community
+              groups. Please contact us for more information at{" "}
+              <Link href="mailto:stocktonjudo@yahoo.com">
+                stocktonjudo@yahoo.com
+              </Link>
             </Typography>
           </Grid>
         </Grid>

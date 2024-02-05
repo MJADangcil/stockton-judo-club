@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import steveIkedaImage from "../../assets/steve_ikeda.png";
 import deanKomureImage from "../../assets/dean_komure.png";
-import greggSkarmasImage from "../../assets/gregg_skarmas.png";
 import raulOchoaImage from "../../assets/raul_ochoa.png";
 import mikeLearyImage from "../../assets/mike_leary.png";
 import chrisEleyImage from "../../assets/chris_eley.png";
@@ -23,7 +22,7 @@ const instructors = [
     title: "Sensei, 5th Degree Black Belt",
     headshot: steveIkedaImage,
     headshotAlt: "Headshot of Steve Ikeda",
-    content: `Steve Ikeda started judo at Stockton Judo Club in 1971 and has practiced continuously since then. He has studied and continues to study under many notable judo instructors, including Masao “Duke” Yoshimura, Benso Tsuji, Charles R. “Chuck” Fuertsch, Ted Kawasaki, Haruo Makimoto, Matsuo “Mac” Takeda, Dr. David Matsumoto, and Dr. Kuniko Takeuchi, among others. Steve has been a national level competitor and is only the third sensei in Stockton Judo Club’s history, following Jack Ferrill and founder Duke Yoshimura. He is certified by USA Judo as a self-defense instructor, and in the winter, he can also be found “on the slopes” as a certified ski instructor. Steve is a Life Member of the United States Judo Federation.`,
+    content: `Steve Ikeda started judo at Stockton Judo Club in 1971 and has practiced continuously since then. He has studied and continues to study under many notable judo instructors, including Masao “Duke” Yoshimura, Benso Tsuji, Charles R. “Chuck” Fuertsch, Ted Kawasaki, Haruo Makimoto, Matsuo “Mac” Takeda, Dr. David Matsumoto, and Dr. Kuniko Takeuchi, among others. Steve has been a national level competitor and is only the fourth sensei in Stockton Judo Club’s history, following Jack Ferrill, Duke Yoshimura, and founding sensei Carl Kawasaki. He is certified by USA Judo as a self-defense instructor, and in the winter, he can also be found on the slopes as a certified ski instructor. Steve is a Life Member of the United States Judo Federation.`,
   },
   {
     name: "Dean Komure",
@@ -31,13 +30,6 @@ const instructors = [
     headshot: deanKomureImage,
     headshotAlt: "Headshot of Dean Komure",
     content: `Dean Komure started judo at the age of 5 at Stockton Judo Club. While he was growing up, he not only worked out at Stockton Judo Club, but also with Yutaka “Dick” Ito, at Manteca Judo Club for many years. Dean is a second-generation farmer in French Camp, and is also an actor best known for his breakthrough role as “Spectator” in the film, “Day of Independence”. Dean is certified by USA Judo as a self-defense instructor. Dean is also a Life Member of the United States Judo Federation.`,
-  },
-  {
-    name: "Gregg Skarmas",
-    title: "Assistant Instructor, 3rd Degree Black Belt",
-    headshot: greggSkarmasImage,
-    headshotAlt: "Headshot of Gregg Skarmas",
-    content: `Gregg Skarmas began studying and practicing judo in 1989 with Ferd Tihista at Watsonville Judo Club, and joined Stockton Judo Club in 1999. Following a career move to Palm Desert, he started Del Griego Judo Club and operated it for several years before returning to Stockton. Stockton Judo Club is proud to have Gregg back on the mat with us.`,
   },
   {
     name: "Raul Ochoa",
@@ -51,7 +43,7 @@ const instructors = [
     title: "Assistant Instructor, 2nd Degree Black Belt",
     headshot: mikeLearyImage,
     headshotAlt: "Headshot of Mike Leary",
-    content: `Mike “Civil War General” Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners. `,
+    content: `Mike Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners. `,
   },
   {
     name: "Chris Eley",
@@ -65,7 +57,7 @@ const instructors = [
     title: "5th Degree Black Belt",
     headshot: mikeSchubertImage,
     headshotAlt: "Picture of Mike Schubert playing ice hockey",
-    content: `Mike joined Stockton Judo Club while still in high school in 1980 and remained a member while he was part of the USMC Judo Team (1986-1988) and even as he opened and operated his own club in Pittsburg for many years. He has since relocated in retirement to Idaho, and briefly operated a judo club in Nampa, but his heart is still with Stockton Judo Club, and is always welcome on the mat with us.`,
+    content: `Mike joined Stockton Judo Club while still in high school in 1980 and remained a member while he was part of the USMC Judo Team (1986-1988) and even as he opened and operated his own club in Pittsburg for many years. He has since relocated in retirement to Idaho, and ramping up a judo club in Nampa, but a piece of his heart is still with Stockton Judo Club, and is always welcome on the mat with us.`,
   },
 ];
 

@@ -35,7 +35,7 @@ export default function HomePage() {
             <Typography variant="h6">
               Welcome to Stockton Judo Club
               <br />
-              Established 1946
+              Founded 1920s - Re-established 1946
               <br />
               Member – Daiheigen Yudanshakai & United States Judo Federation
             </Typography>
