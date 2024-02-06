@@ -69,6 +69,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Firebase Hosing Guide
+### [Firebase Hosting Guide](https://create-react-app.dev/docs/deployment#firebase)
+Assuming Firebase has been initilized already, follow the steps below.
+1. Login into your Firebase account: `firebase login`.
+2. Select the Firebase project: `firebase use`
+NOTE: If you need to find your project: `firebase projects:list`
+3. Build the project build folder
+4. To preview and share: `firebase hosting:channel:deploy preview`
+NOTE: You may need to append `/stockton-judo-club` at the end of the generated **Channel URL** to render the site.
+5. To finalize and deploy: `firebase deploy`
 
-[How to Host and Deploy a React App with Firebase](https://www.freecodecamp.org/news/how-to-deploy-a-react-app-with-firebase/)
+[Firebase CLI reference](https://firebase.google.com/docs/cli#install-cli-windows)
