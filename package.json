@@ -1,7 +1,7 @@
 {
   "name": "stockton-judo-club",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "https://www.stocktonjudoclub.com/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.0",
@@ -20,8 +20,6 @@
     "web-vitals": "^3.5.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
