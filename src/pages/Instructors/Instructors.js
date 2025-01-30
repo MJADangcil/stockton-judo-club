@@ -13,7 +13,7 @@ import steveIkedaImage from "../../assets/steve_ikeda.png";
 import deanKomureImage from "../../assets/dean_komure.png";
 import raulOchoaImage from "../../assets/raul_ochoa.png";
 import mikeLearyImage from "../../assets/mike_leary.png";
-import chrisEleyImage from "../../assets/chris_eley.png";
+import josephHernandezImage from "../../assets/joseph_hernandez.png";
 import mikeSchubertImage from "../../assets/mike_schubert.png";
 
 const instructors = [
@@ -43,14 +43,14 @@ const instructors = [
     title: "Assistant Instructor, 2nd Degree Black Belt",
     headshot: mikeLearyImage,
     headshotAlt: "Headshot of Mike Leary",
-    content: `Mike Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners. `,
+    content: `Mike Leary started judo lessons at Stockton Judo Club in 1965. He is a south Stockton native and St. Mary’s High School alumnus, and grew up two blocks from the club’s current location. Throughout his years as a club member, he has trained with nearly every national champion in the club’s history, and now excels teaching children and beginners.`,
   },
   {
-    name: "Chris Eley",
+    name: "Joseph Hernandez",
     title: "Assistant Instructor, 1st Degree Black Belt",
-    headshot: chrisEleyImage,
-    headshotAlt: "Headshot of Chris Eley",
-    content: `Chris Eley’s judo journey started in 1962 at Stockton Judo Club. He continued practicing judo while a student at UC Santa Barbara, competing as his studies allowed. After returning to Stockton, establishing his law practice and raising a family sometimes kept him away from the dojo yet he always returned to the mat, and we appreciate his learned eye and ‘can-do’ spirit.`,
+    headshot: josephHernandezImage,
+    headshotAlt: "Headshot of Joseph Hernandez",
+    content: `Joseph Hernandez started judo with Stockton Judo Club after playing both football and basketball in high school. He advanced quickly, sometimes working out six and even seven times per week, studying with Rodney Imamura Sensei at CSU Sacramento in addition to Stockton Judo Club. As a result of his diligence, he was selected to participate in a 2022 Kakehashi Project, sponsored by the Japanese government, as part of a cultural exchange program in Nobeoka (Miyazaki Prefecture). Joseph has a strong technical sense for judo and is consistently looking to broaden his knowledge base. Joseph has an inexplicable affinity for 7-Eleven hot dogs, preferring them even to Costco hot dogs, but pizza is his true kryptonite.`,
   },
   {
     name: "Mike Schubert",
