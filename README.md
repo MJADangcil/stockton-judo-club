@@ -48,7 +48,7 @@ Assuming Firebase has been initialized already, follow the steps below:
 
 1. Login into your Firebase account: `firebase login`.
 2. Select the Firebase project: `firebase use <project-name>`. If you need to find your project name, run the following command: `firebase projects:list`
-3. Build the project build folder
-4. To preview and share: `firebase hosting:channel:deploy preview`
+3. Build the project build folder using the command: `npm run build`
+4. To generate a shareable preview of the project run the command `firebase hosting:channel:deploy preview` and navigate to the `hosting:channel` URL to see the preview.
    NOTE: You may need to append `/stockton-judo-club` at the end of the generated **Channel URL** to render the site.
-5. To finalize and deploy: `firebase deploy`
+5. To finalize and deploy to production use the command `firebase deploy` and then navigate to http://stocktonjudoclub.com to see the new changes.
