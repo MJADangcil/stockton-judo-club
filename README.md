@@ -1,82 +1,54 @@
-# Getting Started with Create React App
+# Stockton Judo Club
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`stockton-judo-club` is the public repository for the [Stockton Judo Club](https://stocktonjudoclub.com). The project was bootstrapped with [Create React App](https://create-react-app.dev/), and hosted with [Firebase](https://firebase.google.com/). Domain is purchased and hosted through [Google Domains](https://domains.google/).
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Stockton Judo Club](#stockton-judo-club)
+  - [Table of Contents](#table-of-contents)
+  - [Project Structure](#project-structure)
+  - [Project Instructions](#project-instructions)
+    - [Node.JS and NPM](#nodejs-and-npm)
+    - [Firebase](#firebase)
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The application is built off of single-page application architecture. The project's entry point is [`App.js`](/src/App.js) which is also the [`HomePage.js`](/src/pages/HomePage/HomePage.js). So we have the following project structure:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [`App.js`](/src/App.js) or [`HomePage.js`](/src/pages/HomePage/HomePage.js)
+  - [`AboutPage.js`](/src/pages/AboutPage/AboutPage.js)
+  - [`Membership.js`](/src/pages/Membership/Membership.js)
+  - [`Instructors.js`](/src/pages/Instructors/Instructors.js)
+  - [`ScheduleAndContactInfo.js`](/src/pages/ScheduleAndContactInfo/ScheduleAndContactInfo.js)
+  - [`UsefulLinks.js`](/src/pages/UsefulLinks/UsefulLinks.js)
 
-### `npm test`
+For the front-end components, I use [Material UI](https://mui.com/material-ui/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Instructions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### [Node.JS and NPM](https://create-react-app.dev/docs/available-scripts)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will need to have `node` and `npm` installed on your machine, so follow [these steps](https://nodejs.org/en/download) for your development environment.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+NOTE: Make sure that your `$PATH` variable is set correctly so your terminal can recognize the `node` and `npm` commands.
 
-### `npm run eject`
+Assuming Node.js is installed and configured correctly, follow the steps below:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. With `npm` installed, navigate to the parent/open a terminal in the parent directory and run the `npm install` command to install the packages.
+2. Once the packages are installed, use `npm start` to run the app in the development mode and open a browser window to http://localhost:3000.
+3. For production, simply commit the code changes to the **GitHub repo** and run the `npm run build` to build a React production-ready build.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### [Firebase](https://create-react-app.dev/docs/deployment#firebase)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You will need to have `firebase` CLI installed on your machine, so follow [these steps](https://firebase.google.com/docs/cli#install-cli-windows) for your development environment.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Assuming Firebase has been initialized already, follow the steps below:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-### [Firebase Hosting Guide](https://create-react-app.dev/docs/deployment#firebase)
-Assuming Firebase has been initilized already, follow the steps below.
 1. Login into your Firebase account: `firebase login`.
-2. Select the Firebase project: `firebase use`
-NOTE: If you need to find your project: `firebase projects:list`
+2. Select the Firebase project: `firebase use <project-name>`. If you need to find your project name, run the following command: `firebase projects:list`
 3. Build the project build folder
 4. To preview and share: `firebase hosting:channel:deploy preview`
-NOTE: You may need to append `/stockton-judo-club` at the end of the generated **Channel URL** to render the site.
+   NOTE: You may need to append `/stockton-judo-club` at the end of the generated **Channel URL** to render the site.
 5. To finalize and deploy: `firebase deploy`
-
-[Firebase CLI reference](https://firebase.google.com/docs/cli#install-cli-windows)
