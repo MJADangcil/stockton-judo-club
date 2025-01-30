@@ -52,17 +52,18 @@ export default function AboutPage() {
               during the war, since most of the members and instructors were
               interned by the United States Government, many not returning until
               long after the end of the war. In 1946, Sensei Masao “Duke”
-              Yoshimura, who was eventually awarded the rank of Hachidan (8th
-              degree black belt) by the United States Judo Federation (USJF),
-              re-established Stockton Judo Club, which has operated continuously
-              since then and is the oldest judo club in Northern California.
+              Yoshimura, who was eventually awarded the rank of Hachidan (8
+              <sup>th</sup> degree black belt) by the United States Judo
+              Federation (USJF), re-established Stockton Judo Club, which has
+              operated continuously since then and is the oldest judo club in
+              Northern California.
             </Typography>
           </Grid>
           <Grid component="span" item>
             <Typography variant="body1">
               Stockton Judo Club is led by Sensei Steve Ikeda. Other on-the-mat
-              instructors are Dean Komure, Raul Ochoa, Michael Leary, and Chris
-              Eley.
+              instructors are Dean Komure, Raul Ochoa, Michael Leary, and Joseph
+              Hernandez.
             </Typography>
           </Grid>
           <Grid component="span" item>
