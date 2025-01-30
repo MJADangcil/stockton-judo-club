@@ -27,13 +27,6 @@ const membershipCosts = [
   },
 ];
 
-const date = new Date();
-
-let day = date.getDate();
-let month = date.toLocaleString('default', { month: 'long'});
-let year = date.getFullYear();
-let currentDate = `${month} ${day}, ${year}`;
-
 export default function Membership() {
   return (
     <section>
@@ -53,7 +46,7 @@ export default function Membership() {
               <Typography variant="h4">Membership</Typography>
             </Divider>
             <Typography variant="overline">
-              (rates current as of {currentDate})
+              (rates current as of January 1, 2025)
             </Typography>
           </Grid>
           {membershipCosts.map((membership, i) => (
@@ -90,7 +83,7 @@ export default function Membership() {
           </Grid>
           <Grid item xs={12}>
             <Typography variant="body1">
-              Stockton Judo Club charges a $10 per session mat fee for guests,
+              Stockton Judo Club charges a $20 per session mat fee for guests,
               and guests must show proof of membership in the United States Judo
               Federation or United States Judo Association prior to stepping on
               the mat.
