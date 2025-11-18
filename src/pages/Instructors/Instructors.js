@@ -54,7 +54,7 @@ const instructors = [
   },
   {
     name: "Mike Schubert",
-    title: "5th Degree Black Belt",
+    title: "6th Degree Black Belt",
     headshot: mikeSchubertImage,
     headshotAlt: "Picture of Mike Schubert playing ice hockey",
     content: `Mike joined Stockton Judo Club while still in high school in 1980 and remained a member while he was part of the USMC Judo Team (1986-1988) and even as he opened and operated his own club in Pittsburg for many years. He has since relocated in retirement to Idaho, and ramping up a judo club in Nampa, but a piece of his heart is still with Stockton Judo Club, and is always welcome on the mat with us.`,
