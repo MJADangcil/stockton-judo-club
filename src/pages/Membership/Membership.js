@@ -13,17 +13,17 @@ const membershipCosts = [
   {
     student: "1 student",
     qualifier: undefined,
-    due: "$70/month",
+    due: "$80/month",
   },
   {
     student: "2 students",
     qualifier: "from same household",
-    due: "$90/month",
+    due: "$100/month",
   },
   {
     student: "3+ students",
     qualifier: "from same household",
-    due: "$110/month",
+    due: "$120/month",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function Membership() {
               <Typography variant="h4">Membership</Typography>
             </Divider>
             <Typography variant="overline">
-              (rates current as of January 1, 2025)
+              (rates current as of September 1, 2025)
             </Typography>
           </Grid>
           {membershipCosts.map((membership, i) => (
@@ -73,7 +73,7 @@ export default function Membership() {
           <Grid item xs={12}>
             <Typography variant="body1">
               Members must also join the United States Judo Federation (USJF).
-              Individual memberships to the USJF are $70 per year, with family
+              Individual memberships to the USJF are $80 per year, with family
               memberships available for families of three or more. Go to{" "}
               <Link href="https://www.usjf.com/registration/" target="_blank">
                 https://www.usjf.com/registration/

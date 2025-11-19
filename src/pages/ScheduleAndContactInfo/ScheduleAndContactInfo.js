@@ -16,30 +16,37 @@ import {
 const schedule = [
   {
     day: "Sunday",
+    footnote: "",
     hours: "Closed",
   },
   {
-    day: "Monday*",
+    day: "Monday",
+    footnote: "*",
     hours: "6:30 to 8:00pm",
   },
   {
-    day: "Tuesday†",
+    day: "Tuesday",
+    footnote: "†",
     hours: "6:30 to 8:00pm",
   },
   {
     day: "Wednesday",
+    footnote: "",
     hours: "Closed",
   },
   {
-    day: "Thursday*",
+    day: "Thursday",
+    footnote: "*",
     hours: "6:30 to 8:00pm",
   },
   {
     day: "Friday",
-    hours: "Closed",
+    footnote: "‡",
+    hours: "6:30 to 8:00pm",
   },
   {
     day: "Saturday",
+    footnote: "",
     hours: "Closed",
   },
 ];
@@ -72,6 +79,7 @@ export default function ScheduleAndContactInfo() {
                     <TableRow key={i}>
                       <TableCell component="td" scope="row">
                         {s.day}
+                        <sup>{s.footnote}</sup>
                       </TableCell>
                       <TableCell component="td" scope="row" align="right">
                         {s.hours}
@@ -85,13 +93,14 @@ export default function ScheduleAndContactInfo() {
             <Typography variant="body2">
               † - Advanced/competitive sessions
             </Typography>
+            <Typography variant="body2">‡ - Groundwork only</Typography>
             <br />
             <Typography variant="body1">
               Special/individual sessions are available on an ad hoc basis.
               <br />
               <br />
               Please contact us for more information regarding our “Beginning
-              Littles Judo” for children ages 5-7!
+              Littles Judo” for Kindergarteners!
             </Typography>
           </Grid>
           <Grid item xs={12} sm={5} lg={2}>

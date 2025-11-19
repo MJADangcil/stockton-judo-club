@@ -44,9 +44,11 @@ Assuming Node.js is installed and configured correctly, follow the steps below:
 
 You will need to have `firebase` CLI installed on your machine, so follow [these steps](https://firebase.google.com/docs/cli#install-cli-windows) for your development environment.
 
+These next few steps will require user authentication via mobile phone, so prepare for that! It will require a YouTube app login tied to the specific Firebase-user. A singular code will appear on the web browser which is the correct prompt code for the YouTube app.
+
 Assuming Firebase has been initialized already, follow the steps below:
 
-1. Login into your Firebase account: `firebase login`.
+1. Login into your Firebase account: `firebase login`. You may need to `firebase logout` if the cached authentication token has expired.
 2. Select the Firebase project: `firebase use <project-name>`. If you need to find your project name, run the following command: `firebase projects:list`
 3. Build the project build folder using the command: `npm run build`
 4. To generate a shareable preview of the project run the command `firebase hosting:channel:deploy preview` and navigate to the `hosting:channel` URL to see the preview.
